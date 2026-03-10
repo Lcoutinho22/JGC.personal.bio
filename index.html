@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     
-    <title>JGG Personal Training | Consultoria Premium</title>
-    <meta name="description" content="Consultoria fitness de alto padrão com a JGG Personal Training. Treinos personalizados focados em hipertrofia, emagrecimento e performance.">
-    <meta name="keywords" content="personal trainer, jgg personal, consultoria fitness, treino online, hipertrofia, emagrecimento">
+    <title>João Guilherme Carvalho | Personal Trainer</title>
+    <meta name="description" content="Consultoria fitness de alto padrão com João Guilherme Carvalho. Treinos personalizados focados em hipertrofia, emagrecimento e performance.">
+    <meta name="keywords" content="personal trainer, joão guilherme carvalho, consultoria fitness, treino online, hipertrofia, emagrecimento">
     <meta name="author" content="Coutinho Tech">
     <meta name="robots" content="index, follow">
 
     <meta name="theme-color" content="#161b22">
 
-    <meta property="og:title" content="JGG Personal Training | Premium">
+    <meta property="og:title" content="João Guilherme Carvalho">
     <meta property="og:description" content="Transforme seu corpo com uma metodologia exclusiva e focada nos seus resultados.">
-    <meta property="og:image" content="./Image/WhatsApp Image 2026-03-07 at 15.24.16 (1).jpg">
+    <meta property="og:image" content="./image/logo.png">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
 
@@ -22,10 +22,10 @@
     {
       "@context": "https://schema.org",
       "@type": "HealthAndBeautyBusiness",
-      "name": "JGG Personal Training",
-      "image": "WhatsApp Image 2026-03-07 at 15.24.16 (1).jpg",
+      "name": "João Guilherme Carvalho",
+      "image": "./imagelogo.png",
       "description": "Consultoria fitness online e presencial de alto padrão.",
-      "telephone": "+554891049153",
+      "telephone": "+5548988407421",
       "priceRange": "$$$",
       "address": {
         "@type": "PostalAddress",
@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -46,173 +46,184 @@
     <div class="bg-overlay"></div>
 
     <div class="glass-card">
+        <div class="share-container">
+            <button class="share-toggle" onclick="toggleShareMenu()" aria-label="Compartilhar">
+                <i class="fas fa-share-nodes"></i>
+            </button>
+            <div class="share-menu" id="shareMenu">
+                <a href="javascript:void(0)" onclick="shareSocial('whatsapp')" class="share-link"><i class="fab fa-whatsapp"></i> <span data-i18n="share_whatsapp">WhatsApp</span></a>
+                <a href="javascript:void(0)" onclick="shareSocial('facebook')" class="share-link"><i class="fab fa-facebook-f"></i> <span data-i18n="share_facebook">Facebook</span></a>
+                <a href="javascript:void(0)" onclick="shareSocial('twitter')" class="share-link"><i class="fab fa-twitter"></i> <span data-i18n="share_twitter">Twitter</span></a>
+                <a href="javascript:void(0)" onclick="shareSocial('linkedin')" class="share-link"><i class="fab fa-linkedin-in"></i> <span data-i18n="share_linkedin">LinkedIn</span></a>
+                <a href="javascript:void(0)" onclick="shareSocial('tiktok')" class="share-link"><i class="fab fa-tiktok"></i> <span data-i18n="share_tiktok">TikTok</span></a>
+            </div>
+        </div>
+
         <button class="theme-toggle" onclick="toggleTheme()" aria-label="Mudar Tema"><i class="fas fa-sun"></i></button>
 
+        <div class="lang-container">
+            <button class="lang-toggle" onclick="toggleLangMenu()" aria-label="Mudar Idioma">
+                <i class="fas fa-globe"></i>
+            </button>
+            <div class="lang-menu" id="langMenu">
+                <a href="javascript:void(0)" onclick="changeLanguage('pt')" class="lang-link">PT</a>
+                <a href="javascript:void(0)" onclick="changeLanguage('en')" class="lang-link">EN</a>
+                <a href="javascript:void(0)" onclick="changeLanguage('es')" class="lang-link">ES</a>
+            </div>
+        </div>
+
         <header class="profile-section">
-            <img src="./image/logo.png" alt="JGG Personal Training" class="profile-img-top">
-            <h1>JGG Personal</h1>
-            <h2>Consultoria Premium</h2>
-            <p class="bio-text">Metodologia exclusiva de alto padrão focada em esculpir seu corpo com força e excelência.</p>
+            <img src="./image/logo.png" alt="João Guilherme Carvalho" class="profile-img-top">
+            <h1>João Guilherme Carvalho</h1>
+            <h2 data-i18n="trainer_subtitle">Personal Trainer</h2>
+            <p class="bio-text" data-i18n="bio_text">Resultados sólidos não aceitam atalhos. Construa um corpo forte com quem entende o caminho.</p>
         </header>
 
         <nav class="action-grid">
-            <a href="https://wa.me/554891049153" class="btn-action"><i class="fab fa-whatsapp"></i> <span>Falar Agora</span></a>
-            <a href="#planos" class="btn-action"><i class="fas fa-clipboard-list"></i> <span>Ver Planos</span></a>
+            <a href="https://wa.me/5548988407421" class="btn-action"><i class="fab fa-whatsapp"></i> <span data-i18n="btn_whatsapp">Falar Agora</span></a>
+            <a href="#planos" class="btn-action"><i class="fas fa-clipboard-list"></i> <span data-i18n="btn_plans">Ver Planos</span></a>
         </nav>
 
         <section aria-labelledby="sobre-titulo">
-            <div class="section-header"><h3 id="sobre-titulo">Sobre a Consultoria</h3></div>
+            <div class="section-header"><h3 id="sobre-titulo" data-i18n="about_title">Sobre a Consultoria</h3></div>
             <div class="about-card">
-                <img src="./image/perfil.png" alt="Treinador JGG" class="about-profile-pic">
+                <img src="./image/perfil.png" alt="Treinador João Guilherme Carvalho" class="about-profile-pic">
                 
                 <div class="about-content">
-                    <p class="about-text">
-                        A <span class="about-highlight">João Guilherme Carvalho</span> Ofereço o direcionamento técnico necessário para quem busca resultados reais. Meu trabalho é baseado em ciência e no que comprovadamente funciona: execução perfeita e intensidade certa.
+                    <p class="about-text" data-i18n="about_text_p1">
+                        Em nosa consultoria ofereçemos o direcionamento técnico necessário para quem busca resultados reais. Meu trabalho é baseado em ciência e no que comprovadamente funciona: execução perfeita e intensidade certa.
+                    </p>
+                    <p class="about-text" data-i18n="about_text_p2">
                         Minha missão é guiar sua evolução com ferramentas de precisão, como a progressão de carga e o acompanhamento constante. Sem atalhos, sem invenções, apenas o que traz resultado de verdade.
-                        Construa sua jornada com quem entende.
+                    </p>
                     <div class="about-stats">
                         <div class="stat-item">
-                            <div class="stat-number">+10</div>
-                            <div class="stat-label">Anos Exp.</div>
-                        </div>
-                        <div class="stat-item">
                             <div class="stat-number">100%</div>
-                            <div class="stat-label">Personalizado</div>
+                            <div class="stat-label" data-i18n="stat_personalized">Personalizado</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section aria-labelledby="metodologia-titulo">
-            <div class="section-header" style="margin-top: 30px; margin-bottom: 25px;"><h3 id="metodologia-titulo" style="font-size: 1.15rem; line-height: 1.4;">Um treino que se adapta à sua vida, não o contrário</h3></div>
+        <section aria-labelledby="metodologia-titulo" style="width: 100%;">
+            <div class="section-header" style="margin-top: 30px; margin-bottom: 25px;"><h3 id="metodologia-titulo" style="font-size: 1.15rem; line-height: 1.4;" data-i18n="method_title">Um treino que se adapta à sua vida, não o contrário</h3></div>
             
-            <div class="features-grid">
-                <div class="step-card">
-                    <div class="step-icon-wrapper"><i class="fas fa-clipboard-list"></i></div>
-                    <div class="step-title">Diagnóstico de Rotina</div>
-                    <div class="step-desc">Antes de prescrever o primeiro exercício, mergulho no seu dia a dia (trabalho, sono e stress) para entender onde o treino se encaixa melhor.</div>
-                </div>
-                
-                <div class="step-card">
-                    <div class="step-icon-wrapper"><i class="fas fa-chart-line"></i></div>
-                    <div class="step-title">Análise de Histórico</div>
-                    <div class="step-desc">Respeito o que você já viveu no esporte. Seja você um iniciante do zero ou alguém voltando de lesão, o ponto de partida é o seu nível atual.</div>
-                </div>
-                
-                <div class="step-card">
-                    <div class="step-icon-wrapper"><i class="fas fa-stopwatch"></i></div>
-                    <div class="step-title">Treino com Gestão de Tempo</div>
-                    <div class="step-desc">Nada de fichas intermináveis. O treino é adaptado à sua disponibilidade real, seja ela de 30 minutos ou 1 hora.</div>
-                </div>
-                
-                <div class="step-card">
-                    <div class="step-icon-wrapper"><i class="fas fa-bullseye"></i></div>
-                    <div class="step-title">Foco na Aderência</div>
-                    <div class="step-desc">O melhor método é aquele que você consegue manter. Ajusto a intensidade e o volume para que o resultado seja sólido e duradouro.</div>
+            <div class="carousel-container">
+                <div class="carousel-track-manual center-track">
+                    <div class="step-card carousel-step-card">
+                        <div class="step-icon-wrapper"><i class="fas fa-clipboard-list"></i></div>
+                        <div class="step-title" data-i18n="step1_title">Diagnóstico de Rotina</div>
+                        <div class="step-desc" data-i18n="step1_desc">Antes de prescrever o primeiro exercício, mergulho no seu dia a dia (trabalho, sono e stress) para entender onde o treino se encaixa melhor.</div>
+                    </div>
+                    
+                    <div class="step-card carousel-step-card">
+                        <div class="step-icon-wrapper"><i class="fas fa-chart-line"></i></div>
+                        <div class="step-title" data-i18n="step2_title">Análise de Histórico</div>
+                        <div class="step-desc" data-i18n="step2_desc">Respeito o que você já viveu no esporte. Seja você um iniciante do zero ou alguém voltando de lesão, o ponto de partida é o seu nível atual.</div>
+                    </div>
+                    
+                    <div class="step-card carousel-step-card">
+                        <div class="step-icon-wrapper"><i class="fas fa-stopwatch"></i></div>
+                        <div class="step-title" data-i18n="step3_title">Treino com Gestão de Tempo</div>
+                        <div class="step-desc" data-i18n="step3_desc">Nada de fichas intermináveis. O treino é adaptado à sua disponibilidade real, seja ela de 30 minutos ou 1 hora.</div>
+                    </div>
+                    
+                    <div class="step-card carousel-step-card">
+                        <div class="step-icon-wrapper"><i class="fas fa-bullseye"></i></div>
+                        <div class="step-title" data-i18n="step4_title">Foco na Aderência</div>
+                        <div class="step-desc" data-i18n="step4_desc">O melhor método é aquele que você consegue manter. Ajusto a intensidade e o volume para que o resultado seja sólido e duradouro.</div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="planos" aria-labelledby="planos-titulo">
-            <div class="section-header"><h3 id="planos-titulo">Programas Exclusivos</h3></div>
+            <div class="section-header"><h3 id="planos-titulo" data-i18n="plans_title">Programas Exclusivos</h3></div>
             
             <div class="carousel-container">
                 <div class="carousel-track-manual center-track">
                     
                     <div class="plan-card">
-                        <div class="plan-title">Plano Prata</div>
-                        <div class="gender-highlight">Acesso Básico</div>
-                        <div class="plan-price">R$ 150,00<br><span>Mensalidade</span></div>
+                        <div class="plan-title" data-i18n="plan_silver_title">Plano Prata</div>
+                        <div class="gender-highlight" data-i18n="plan_silver_badge">Acesso Básico</div>
+                        <div class="plan-price">R$ 150,00<br><span data-i18n="plan_monthly">Mensalidade</span></div>
                         <ul class="plan-features">
-                            <li class="feature-item"><i class="fas fa-check"></i> Treino Personalizado App</li>
-                            <li class="feature-item"><i class="fas fa-check"></i> Suporte Básico (Tira-dúvidas)</li>
-                            <li class="feature-item"><i class="fas fa-check"></i> Ajustes de Treino Mensais</li>
+                            <li class="feature-item"><i class="fas fa-check"></i> <span data-i18n="feature_app">Treino Personalizado App</span></li>
+                            <li class="feature-item"><i class="fas fa-check"></i> <span data-i18n="feature_support_basic">Suporte Básico (Tira-dúvidas)</span></li>
+                            <li class="feature-item"><i class="fas fa-check"></i> <span data-i18n="feature_adjustments_monthly">Ajustes de Treino Mensais</span></li>
                         </ul>
-                        <button onclick="escolherPlano('Plano Prata (R$ 150)')" class="plan-btn">Selecionar Prata</button>
+                        <button onclick="escolherPlano('Plano Prata (R$ 150)')" class="plan-btn" data-i18n="btn_silver">Selecionar Prata</button>
                     </div>
 
                     <div class="plan-card featured">
-                        <div class="plan-badge">Mais Escolhido</div>
-                        <div class="plan-title">Plano Ouro</div>
-                        <div class="gender-highlight" style="border-color: var(--border-glass);">Acompanhamento Completo</div>
-                        <div class="plan-price">R$ 250,00<br><span>Mensalidade</span></div>
+                        <div class="plan-badge" data-i18n="plan_gold_badge">Mais Escolhido</div>
+                        <div class="plan-title" data-i18n="plan_gold_title">Plano Ouro</div>
+                        <div class="gender-highlight" style="border-color: var(--border-glass);" data-i18n="plan_gold_subtitle">Acompanhamento Completo</div>
+                        <div class="plan-price">R$ 250,00<br><span data-i18n="plan_monthly">Mensalidade</span></div>
                         <ul class="plan-features">
-                            <li class="feature-item"><i class="fas fa-check"></i> <strong>Treino Personalizado App</strong></li>
-                            <li class="feature-item"><i class="fas fa-check"></i> Suporte Premium WhatsApp</li>
-                            <li class="feature-item"><i class="fas fa-check"></i> Correção de Execução por Vídeo</li>
-                            <li class="feature-item"><i class="fas fa-check"></i> Ajustes Quinzenais</li>
+                            <li class="feature-item"><i class="fas fa-check"></i> <strong data-i18n="feature_app">Treino Personalizado App</strong></li>
+                            <li class="feature-item"><i class="fas fa-check"></i> <span data-i18n="feature_support_whatsapp">Suporte WhatsApp</span></li>
+                            <li class="feature-item"><i class="fas fa-check"></i> <span data-i18n="feature_video">Correção de Execução por Vídeo</span></li>
+                            <li class="feature-item"><i class="fas fa-check"></i> <span data-i18n="feature_adjustments_biweekly">Ajustes Quinzenais</span></li>
                         </ul>
-                        <button onclick="escolherPlano('Plano Ouro (R$ 250)')" class="plan-btn">Assinar Ouro</button>
-                    </div>
-
-                    <div class="plan-card">
-                        <div class="plan-title">Plano Diamante</div>
-                        <div class="gender-highlight">Consultoria Elite</div>
-                        <div class="plan-price">R$ 400,00<br><span>Mensalidade</span></div>
-                        <ul class="plan-features">
-                            <li class="feature-item"><i class="fas fa-check"></i> <strong>Tudo do Plano Ouro</strong></li>
-                            <li class="feature-item"><i class="fas fa-check"></i> Acompanhamento Diário</li>
-                            <li class="feature-item"><i class="fas fa-check"></i> Avaliação Física e Postural</li>
-                            <li class="feature-item"><i class="fas fa-check"></i> 1 Encontro VIP/Mentoria (Mês)</li>
-                        </ul>
-                        <button onclick="escolherPlano('Plano Diamante (R$ 400)')" class="plan-btn">Assinar Diamante</button>
+                        <button onclick="escolherPlano('Plano Ouro (R$ 250)')" class="plan-btn" data-i18n="btn_gold">Assinar Ouro</button>
                     </div>
 
                 </div>
             </div>
             
             <div class="plans-cta-footer">
-                <a href="https://wa.me/554891049153" class="link-cta" style="text-align: center; display: block;">Dúvida sobre os planos? Fale com a equipe <i class="fas fa-arrow-right"></i></a>
+                <a href="https://wa.me/5548988407421" class="link-cta" style="text-align: center; display: block;"><span data-i18n="plans_cta">Dúvida sobre os planos? Fale comigo </span><i class="fas fa-arrow-right"></i></a>
             </div>
         </section>
 
         <section aria-labelledby="beneficios-titulo">
-            <div class="section-header" style="margin-top: 10px;"><h3 id="beneficios-titulo">Benefícios Inclusos</h3></div>
+            <div class="section-header" style="margin-top: 10px;"><h3 id="beneficios-titulo" data-i18n="benefits_title">Benefícios Inclusos</h3></div>
             <div class="benefits-card">
                 <ul class="benefits-list">
-                    <li><i class="fas fa-check-circle"></i> Avaliação Física Completa.</li>
-                    <li><i class="fas fa-check-circle"></i> Anamnese Funcional e Postural.</li>
-                    <li><i class="fas fa-check-circle"></i> Planilha de Progressão via App Exclusivo.</li>
-                    <li><i class="fas fa-check-circle"></i> Planejamento de Metas e Resultados.</li>
-                    <li><i class="fas fa-check-circle"></i> Suporte Prioritário via WhatsApp.</li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="benefit1">Avaliação Física Completa.</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="benefit2">Anamnese Funcional e Postural.</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="benefit3">Planilha de Progressão via App Exclusivo.</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="benefit4">Planejamento de Metas e Resultados.</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="benefit5">Suporte Prioritário via WhatsApp.</span></li>
                 </ul>
             </div>
         </section>
 
         <section aria-labelledby="tabela-valores-titulo">
-            <div class="section-header" style="margin-top: 30px;"><h3 id="tabela-valores-titulo">Tabela de Valores (Presencial)</h3></div>
+            <div class="section-header" style="margin-top: 30px;"><h3 id="tabela-valores-titulo" data-i18n="pricing_title">Tabela de Valores (Presencial)</h3></div>
             
             <div class="pricing-card">
-                <h4 class="pricing-card-title">Treinamento Personalizado (Plano Mensal)</h4>
-                <p class="pricing-card-subtitle">Foco em flexibilidade e início imediato.</p>
+                <h4 class="pricing-card-title" data-i18n="pricing_monthly_title">Treinamento Personalizado (Plano Mensal)</h4>
+                <p class="pricing-card-subtitle" data-i18n="pricing_monthly_subtitle">Foco em flexibilidade e início imediato.</p>
                 
                 <div class="table-responsive">
                     <table class="custom-table">
                         <thead>
                             <tr>
-                                <th>Frequência</th>
-                                <th>Total de Aulas / Mês</th>
-                                <th>Plano Mensal</th>
-                                <th>Valor por Aula</th>
+                                <th data-i18n="table_header_freq">Frequência</th>
+                                <th data-i18n="table_header_classes">Total de Aulas / Mês</th>
+                                <th data-i18n="table_header_monthly_plan">Plano Mensal</th>
+                                <th data-i18n="table_header_value_class">Valor por Aula</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1x na Semana</td>
-                                <td>4 aulas</td>
+                                <td data-i18n="table_1x">1x na Semana</td>
+                                <td data-i18n="table_4_classes">4 aulas</td>
                                 <td class="val-highlight">R$ 320,00</td>
                                 <td>R$ 80,00</td>
                             </tr>
                             <tr>
-                                <td>2x na Semana</td>
-                                <td>8 aulas</td>
+                                <td data-i18n="table_2x">2x na Semana</td>
+                                <td data-i18n="table_8_classes">8 aulas</td>
                                 <td class="val-highlight">R$ 640,00</td>
                                 <td>R$ 80,00</td>
                             </tr>
                             <tr>
-                                <td>3x na Semana</td>
-                                <td>12 aulas</td>
+                                <td data-i18n="table_3x">3x na Semana</td>
+                                <td data-i18n="table_12_classes">12 aulas</td>
                                 <td class="val-highlight">R$ 960,00</td>
                                 <td>R$ 80,00</td>
                             </tr>
@@ -222,35 +233,35 @@
             </div>
 
             <div class="pricing-card">
-                <h4 class="pricing-card-title">Treinamento Personalizado (Plano Trimestral)</h4>
-                <p class="pricing-card-subtitle">O caminho para a constância e o melhor custo-benefício.</p>
+                <h4 class="pricing-card-title" data-i18n="pricing_trimestral_title">Treinamento Personalizado (Plano Trimestral)</h4>
+                <p class="pricing-card-subtitle" data-i18n="pricing_trimestral_subtitle">O caminho para a constância e o melhor custo-benefício.</p>
                 
                 <div class="table-responsive">
                     <table class="custom-table">
                         <thead>
                             <tr>
-                                <th>Frequência</th>
-                                <th>Total de Aulas / Mês</th>
-                                <th>Valor Mensal (3x)</th>
-                                <th>Valor por Aula</th>
+                                <th data-i18n="table_header_freq">Frequência</th>
+                                <th data-i18n="table_header_classes">Total de Aulas / Mês</th>
+                                <th data-i18n="table_header_trimestral_plan">Valor Mensal (3x)</th>
+                                <th data-i18n="table_header_value_class">Valor por Aula</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1x na Semana</td>
-                                <td>4 aulas</td>
+                                <td data-i18n="table_1x">1x na Semana</td>
+                                <td data-i18n="table_4_classes">4 aulas</td>
                                 <td class="val-highlight">R$ 280,00</td>
                                 <td>R$ 70,00</td>
                             </tr>
                             <tr>
-                                <td>2x na Semana</td>
-                                <td>8 aulas</td>
+                                <td data-i18n="table_2x">2x na Semana</td>
+                                <td data-i18n="table_8_classes">8 aulas</td>
                                 <td class="val-highlight">R$ 560,00</td>
                                 <td>R$ 70,00</td>
                             </tr>
                             <tr>
-                                <td>3x na Semana</td>
-                                <td>12 aulas</td>
+                                <td data-i18n="table_3x">3x na Semana</td>
+                                <td data-i18n="table_12_classes">12 aulas</td>
                                 <td class="val-highlight">R$ 840,00</td>
                                 <td>R$ 70,00</td>
                             </tr>
@@ -262,37 +273,37 @@
 
         <section aria-labelledby="faq-titulo">
             <div class="faq-card">
-                <h3 class="faq-card-title" id="faq-titulo">Seu Caminho Para o Resultado</h3>
+                <h3 class="faq-card-title" id="faq-titulo" data-i18n="faq_title">Seu Caminho Para o Resultado</h3>
                 
                 <div class="faq-item">
-                    <button class="faq-toggle">Medo de Esforço Sem Resultado? <i class="fas fa-chevron-down"></i></button>
+                    <button class="faq-toggle"><span data-i18n="faq1_q">Medo de Esforço Sem Resultado?</span> <i class="fas fa-chevron-down"></i></button>
                     <div class="faq-body">
-                        <p class="faq-desc-title">Nossa Solução: Personalização Total</p>
-                        <p class="faq-desc-text">Criamos planos de treino e dieta 100% adaptados ao seu biotipo e objetivo real, eliminando o cansaço de treinar pesado sem ver mudanças no corpo.</p>
+                        <p class="faq-desc-title" data-i18n="faq1_a_title">Nossa Solução: Personalização Total</p>
+                        <p class="faq-desc-text" data-i18n="faq1_a_text">Crio planos de treino 100% adaptados ao seu biotipo e objetivo real, eliminando o cansaço de treinar pesado sem ver mudanças no corpo.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-toggle">Minha Rotina é Caótica? <i class="fas fa-chevron-down"></i></button>
+                    <button class="faq-toggle"><span data-i18n="faq2_q">Minha Rotina é Caótica?</span> <i class="fas fa-chevron-down"></i></button>
                     <div class="faq-body">
-                        <p class="faq-desc-title">Nossa Solução: Suporte Flexível</p>
-                        <p class="faq-desc-text">Oferecemos um acompanhamento que se encaixa na sua rotina para garantir consistência e clareza sobre quais exercícios fazer ao chegar na academia.</p>
+                        <p class="faq-desc-title" data-i18n="faq2_a_title">Nossa Solução: Suporte Flexível</p>
+                        <p class="faq-desc-text" data-i18n="faq2_a_text">Ofereço um acompanhamento que se encaixa na sua rotina para garantir consistência e clareza sobre quais exercícios fazer ao chegar na academia.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-toggle">Sinto Insegurança No Início? <i class="fas fa-chevron-down"></i></button>
+                    <button class="faq-toggle"><span data-i18n="faq3_q">Sinto Insegurança No Início?</span> <i class="fas fa-chevron-down"></i></button>
                     <div class="faq-body">
-                        <p class="faq-desc-title">Nossa Solução: Acompanhamento Adaptativo</p>
-                        <p class="faq-desc-text">Trabalhamos com ajustes em cada etapa do processo conforme a sua evolução, para você saber exatamente o que realmente funciona.</p>
+                        <p class="faq-desc-title" data-i18n="faq3_a_title">Nossa Solução: Acompanhamento Adaptativo</p>
+                        <p class="faq-desc-text" data-i18n="faq3_a_text">Trabalho com ajustes em cada etapa do processo conforme a sua evolução, para você saber exatamente o que realmente funciona.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-toggle">Preso No Ciclo De Frustração? <i class="fas fa-chevron-down"></i></button>
+                    <button class="faq-toggle"><span data-i18n="faq4_q">Preso No Ciclo De Frustração?</span> <i class="fas fa-chevron-down"></i></button>
                     <div class="faq-body">
-                        <p class="faq-desc-title">Nossa Solução: Método Validado</p>
-                        <p class="faq-desc-text">Foco total em resultados reais, sustentáveis e comprovados a longo prazo, quebrando o ciclo de perda de motivação com métodos genéricos da internet.</p>
+                        <p class="faq-desc-title" data-i18n="faq4_a_title">Nossa Solução: Método Validado</p>
+                        <p class="faq-desc-text" data-i18n="faq4_a_text">Foco total em resultados reais, sustentáveis e comprovados a longo prazo, quebrando o ciclo de perda de motivação com métodos genéricos da internet.</p>
                     </div>
                 </div>
 
@@ -300,24 +311,23 @@
         </section>
 
         <section aria-labelledby="form-titulo">
-            <div class="section-header" style="margin-top: 30px;"><h3 id="form-titulo">Aplicação para Consultoria</h3></div>
+            <div class="section-header" style="margin-top: 30px;"><h3 id="form-titulo" data-i18n="form_title">Aplicação para Consultoria</h3></div>
             <div class="schedule-form">
                 
                 <div class="form-group">
-                    <label class="form-label" for="planSelect">Plano de Interesse</label>
+                    <label class="form-label" for="planSelect" data-i18n="form_label_plan">Plano de Interesse</label>
                     <select id="planSelect" class="form-select">
-                        <option value="Ainda não sei / Quero recomendação" selected>Ainda não sei / Quero recomendação</option>
-                        <optgroup label="Planos Online">
+                        <option value="Ainda não sei / Quero recomendação" selected data-i18n="form_plan_default">Ainda não sei / Quero recomendação</option>
+                        <optgroup label="Planos Online" data-i18n="form_group_online">
                             <option value="Plano Prata (R$ 150)">Plano Prata (R$ 150,00)</option>
                             <option value="Plano Ouro (R$ 250)">Plano Ouro (R$ 250,00)</option>
-                            <option value="Plano Diamante (R$ 400)">Plano Diamante (R$ 400,00)</option>
                         </optgroup>
-                        <optgroup label="Treinamento Presencial (Mensal)">
+                        <optgroup label="Treinamento Presencial (Mensal)" data-i18n="form_group_monthly">
                             <option value="Presencial Mensal - 1x na semana">Presencial Mensal - 1x na semana</option>
                             <option value="Presencial Mensal - 2x na semana">Presencial Mensal - 2x na semana</option>
                             <option value="Presencial Mensal - 3x na semana">Presencial Mensal - 3x na semana</option>
                         </optgroup>
-                        <optgroup label="Treinamento Presencial (Trimestral)">
+                        <optgroup label="Treinamento Presencial (Trimestral)" data-i18n="form_group_trimestral">
                             <option value="Presencial Trimestral - 1x na semana">Presencial Trimestral - 1x na semana</option>
                             <option value="Presencial Trimestral - 2x na semana">Presencial Trimestral - 2x na semana</option>
                             <option value="Presencial Trimestral - 3x na semana">Presencial Trimestral - 3x na semana</option>
@@ -326,59 +336,61 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label" for="clientName">Seu Nome</label>
-                    <input type="text" id="clientName" class="form-input" placeholder="Seu nome completo">
+                    <label class="form-label" for="clientName" data-i18n="form_label_name">Seu Nome</label>
+                    <input type="text" id="clientName" class="form-input" placeholder="Seu nome completo" data-i18n="form_placeholder_name">
                 </div>
                 
                 <div class="form-row">
                     <div class="form-group">
-                        <label class="form-label" for="clientAge">Idade</label>
-                        <input type="number" id="clientAge" class="form-input" placeholder="Ex: 30">
+                        <label class="form-label" for="clientAge" data-i18n="form_label_age">Idade</label>
+                        <input type="number" id="clientAge" class="form-input" placeholder="Ex: 30" data-i18n="form_placeholder_age">
                     </div>
                      <div class="form-group">
-                        <label class="form-label" for="levelSelect">Nível Atual</label>
+                        <label class="form-label" for="levelSelect" data-i18n="form_label_level">Nível Atual</label>
                         <select id="levelSelect" class="form-select">
-                            <option value="Iniciante">Iniciante</option>
-                            <option value="Intermediário">Intermediário</option>
-                            <option value="Avançado">Avançado</option>
+                            <option value="Iniciante" data-i18n="form_level_beginner">Iniciante</option>
+                            <option value="Intermediário" data-i18n="form_level_intermediate">Intermediário</option>
+                            <option value="Avançado" data-i18n="form_level_advanced">Avançado</option>
                         </select>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label" for="healthInput">Possui lesões ou dores?</label>
-                    <textarea id="healthInput" class="form-input" placeholder="Descreva aqui se tiver alguma restrição..."></textarea>
+                    <label class="form-label" for="healthInput" data-i18n="form_label_health">Possui lesões ou dores?</label>
+                    <textarea id="healthInput" class="form-input" placeholder="Descreva aqui se tiver alguma restrição..." data-i18n="form_placeholder_health"></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label" for="goalInput">Qual seu principal objetivo?</label>
-                     <textarea id="goalInput" class="form-input" placeholder="Ex: Quero emagrecer e ganhar massa..."></textarea>
+                    <label class="form-label" for="goalInput" data-i18n="form_label_goal">Qual seu principal objetivo?</label>
+                     <textarea id="goalInput" class="form-input" placeholder="Ex: Quero emagrecer e ganhar massa..." data-i18n="form_placeholder_goal"></textarea>
                 </div>
 
                 <button onclick="enviarAnamnese()" class="btn-schedule">
-                    <i class="fab fa-whatsapp"></i> Enviar Avaliação
+                    <i class="fab fa-whatsapp"></i> <span data-i18n="btn_submit">Enviar Avaliação</span>
                 </button>
             </div>
         </section>
 
         <div class="cta-final-container">
-            <a href="https://wa.me/554891049153" class="cta-final-box">
-                <div class="cta-final-title">Comece Sua Transformação</div>
-                <p class="cta-final-sub">Agende sua avaliação e dê o primeiro passo hoje.</p>
+            <a href="https://wa.me/5548988407421" class="cta-final-box">
+                <div class="cta-final-title" data-i18n="cta_final_title">Comece Sua Transformação</div>
+                <p class="cta-final-sub" data-i18n="cta_final_sub">Agende sua avaliação e dê o primeiro passo hoje.</p>
                 <div class="cta-final-btn-inner">
-                    <i class="fab fa-whatsapp"></i> Falar com a Equipe
+                    <i class="fab fa-whatsapp"></i> <span data-i18n="cta_final_btn">Falar Comigo</span>
                 </div>
             </a>
         </div>
 
         <footer class="footer">
             <div class="footer-icons">
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/joaoguilhermejc?igsh=MW14ZTc1N3dxMHJ3Ng%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
             </div>
-            <p>© 2026 JGG Personal Training.</p>
+            <p>© 2026 João Guilherme Carvalho.</p>
             <p style="margin-top:5px; opacity:0.5; font-size:0.7rem;">By Coutinho Tech</p>
         </footer>
     </div>
+    
+    <script src="./js/translations.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
