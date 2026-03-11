@@ -296,7 +296,7 @@ body.light-theme .lang-link {
 }
 
 h1 {
-  font-family: var(--title-font);
+  font-family: var(--font-body);
   font-size: 2.3rem;
   font-weight: 600;
   font-style: italic;
@@ -538,11 +538,36 @@ body.light-theme .step-icon-wrapper {
   scroll-behavior: smooth;
   padding-top: 15px;
   padding-bottom: 15px;
-  scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
 }
-.carousel-track-manual::-webkit-scrollbar {
-  display: none;
+@media (max-width: 767px) {
+  .carousel-track-manual {
+    scrollbar-width: none;
+  }
+  .carousel-track-manual::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .carousel-track-manual {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-color) rgba(201, 123, 70, 0.05);
+  }
+  .carousel-track-manual::-webkit-scrollbar {
+    height: 8px;
+    display: block;
+  }
+  .carousel-track-manual::-webkit-scrollbar-track {
+    background: rgba(201, 123, 70, 0.05);
+    border-radius: 10px;
+  }
+  .carousel-track-manual::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+  }
+  .carousel-track-manual::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-color);
+  }
 }
 .center-track {
   justify-content: flex-start;

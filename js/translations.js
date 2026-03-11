@@ -4,7 +4,7 @@ const translations = {
         btn_whatsapp: "Falar Agora",
         btn_plans: "Ver Planos",
         about_title: "Sobre a Consultoria",
-        about_text_p1: "Em nossa consultoria oferecemos o direcionamento técnico necessário para quem busca resultados reais. Meu trabalho é baseado em ciência e no que comprovadamente funciona: execução perfeita e intensidade certa.",
+        about_text_p1: " Em minha consultoria ofereço o direcionamento técnico necessário para quem busca resultados reais. Meu trabalho é baseado em ciência e no que comprovadamente funciona: execução perfeita e intensidade certa.",
         about_text_p2: "Minha missão é guiar sua evolução com ferramentas de precisão, como a progressão de carga e o acompanhamento constante. Sem atalhos, sem invenções, apenas o que traz resultado de verdade.",
         stat_personalized: "Personalizado",
         method_title: "Um treino que se adapta à sua vida, não o contrário",
